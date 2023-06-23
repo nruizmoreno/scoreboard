@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basketball Counter</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/cursed-timer-ulil"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="screen-container">
+        <h3 class="home-team">HOME</h3>
+        <h2 class="home-score screen" id="home-screen">0</h2>
+
+        <div class="buttons">
+          <button class="home-free-throw" onclick="add1Home()">+1</button>
+          <button class="home-2points" onclick="add2Home()">+2</button>
+          <button class="home-3points" onclick="add3Home()">+3</button>
+        </div>
+      </div>
+
+      <div class="screen-container">
+        <h3 class="guest-team">GUEST</h3>
+        <h2 class="guest-score screen" id="guest-screen">0</h2>
+
+        <div class="buttons">
+          <button class="guest-free-throw" onclick="add1Guest()">+1</button>
+          <button class="guest-2points" onclick="add2Guest()">+2</button>
+          <button class="guest-3points" onclick="add3Guest()">+3</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <button class="new-game-btn" onclick="newGame()">NEW GAME</button>
+    </div>
+  </body>
+  <script src="/script.js"></script>
+</html>
